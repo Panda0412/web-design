@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>События</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <script src="js/bootstrap.min.js"></script>
+</head>
+<body>
+<aside>
+    <div class="navbar__logo">
+        <img class="navbar__logo-image" alt="Kronbars Games Digital Logo" src="./images/logo.svg">
+    </div>
+    <nav>
+        <a class="navbar__item" href="#">
+            <svg width="35" height="35" viewBox="0 0 35 35" fill="none" class="navbar__icon">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M5.83341 26.25V7.29167H23.3334V26.25C23.3334 26.7613 23.4211 27.2522 23.5824 27.7083H7.29175C6.48633 27.7083 5.83341 27.0554 5.83341 26.25ZM27.7084 30.625H7.29175C4.8755 30.625 2.91675 28.6662 2.91675 26.25V4.375H23.3334H24.7917H26.2501L26.2501 11.6667H32.0834L32.0834 13.125V26.25C32.0834 28.6662 30.1247 30.625 27.7084 30.625ZM27.7084 27.7083C28.5138 27.7083 29.1668 27.0554 29.1668 26.25V14.5833H26.2501L26.2501 26.25C26.2501 27.0554 26.903 27.7083 27.7084 27.7083ZM14.5834 10.2083V16.0417H8.75008V10.2083H14.5834ZM20.4167 14.5833V11.6667H16.0417V14.5833H20.4167ZM20.4167 17.5V20.4167H8.75008V17.5H20.4167ZM20.4167 24.7917V21.875H8.75008V24.7917H20.4167Z" fill="currentColor"/>
+            </svg>
+            Новости
+        </a>
+        <a class="navbar__item navbar__item--active" href="#">
+            <svg width="35" height="35" viewBox="0 0 35 35" fill="none" class="navbar__icon">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M11.6667 8.75008H8.75008V7.29175H5.83342V11.6667H29.1668V7.29175H26.2501V8.75008H23.3334V7.29175H11.6667V8.75008ZM29.1668 14.5834H5.83342V29.1667H29.1668V14.5834ZM23.3334 4.37508H11.6667V2.91675H8.75008V4.37508H5.83341C4.22258 4.37508 2.91675 5.68092 2.91675 7.29175V29.1667C2.91675 30.7776 4.22258 32.0834 5.83341 32.0834H29.1667C30.7776 32.0834 32.0834 30.7776 32.0834 29.1667V7.29175C32.0834 5.68092 30.7776 4.37508 29.1667 4.37508H26.2501V2.91675H23.3334V4.37508ZM13.1251 20.4167H10.2084V17.5001H13.1251V20.4167ZM16.0417 20.4167H18.9584V17.5001H16.0417V20.4167ZM24.7917 20.4167H21.8751V17.5001H24.7917V20.4167ZM10.2084 26.2501H13.1251V23.3334H10.2084V26.2501ZM18.9584 26.2501H16.0417V23.3334H18.9584V26.2501Z" fill="currentColor"/>
+            </svg>
+            События
+        </a>
+        <a class="navbar__item" href="#">
+            <svg width="35" height="35" viewBox="0 0 35 35" fill="none" class="navbar__icon">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M18.9584 27.7083V26.1466C21.851 25.7329 24.3524 24.1065 25.9312 21.7989C29.8892 21.2536 32.0834 17.825 32.0834 13.125V8.75C32.0834 7.13917 30.7776 5.83333 29.1667 5.83333H27.3182C26.8139 4.96154 25.8713 4.375 24.7917 4.375H10.2084C9.12884 4.375 8.18625 4.96154 7.68195 5.83333H5.83341C4.22258 5.83333 2.91675 7.13917 2.91675 8.75V13.125C2.91675 17.825 5.11093 21.2536 9.06896 21.7989C10.6477 24.1065 13.1491 25.7329 16.0417 26.1466V27.7083H14.5834C12.9726 27.7083 11.6667 29.0142 11.6667 30.625H23.3334C23.3334 29.0142 22.0276 27.7083 20.4167 27.7083H18.9584ZM5.83341 8.75H7.29175V16.0417C7.29175 16.7092 7.35582 17.3618 7.47816 17.9936C6.40257 17.0255 5.83341 15.3581 5.83341 13.125V8.75ZM27.7084 8.75V16.0417C27.7084 16.7092 27.6443 17.3618 27.522 17.9936C28.5976 17.0255 29.1667 15.3581 29.1667 13.125V8.75H27.7084ZM10.2084 16.0417V7.29166H24.7917V16.0417C24.7917 20.0687 21.5272 23.3333 17.5001 23.3333C13.473 23.3333 10.2084 20.0687 10.2084 16.0417Z" fill="currentColor"/>
+            </svg>
+            Рейтинг
+        </a>
+        <a class="navbar__item" href="#">
+            <svg width="35" height="35" viewBox="0 0 35 35" fill="none" class="navbar__icon">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M4.37492 4.375H30.6249C32.2357 4.375 33.5416 5.68084 33.5416 7.29167V27.7083C33.5416 29.3192 32.2357 30.625 30.6249 30.625H4.37492C2.76409 30.625 1.45825 29.3192 1.45825 27.7083V7.29167C1.45825 5.68084 2.76409 4.375 4.37492 4.375ZM4.37492 7.29166V27.7083H30.6249V7.29166H4.37492ZM10.2083 24.7917H13.1249V16.0417H10.2083V24.7917ZM18.9583 24.7917H16.0416V10.2083H18.9583V24.7917ZM21.8749 24.7917H24.7916V14.5833H21.8749V24.7917Z" fill="currentColor"/>
+            </svg>
+            Результаты
+        </a>
+        <a class="navbar__item" href="#">
+            <svg width="35" height="35" viewBox="0 0 35 35" fill="none" class="navbar__icon">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M1.45825 17.4999C1.45825 26.3595 8.64035 33.5416 17.4999 33.5416C26.3595 33.5416 33.5416 26.3595 33.5416 17.4999C33.5416 8.64035 26.3595 1.45825 17.4999 1.45825C8.64035 1.45825 1.45825 8.64035 1.45825 17.4999ZM30.6249 17.4999C30.6249 24.7487 24.7487 30.6249 17.4999 30.6249C10.2512 30.6249 4.37493 24.7487 4.37493 17.4999C4.37493 10.2512 10.2512 4.37492 17.4999 4.37492C24.7487 4.37492 30.6249 10.2512 30.6249 17.4999ZM18.9635 20.4142H20.4209V23.3308H14.5875V20.4142H16.0459V17.4975H14.5875V14.5808H18.9635V20.4142ZM18.9592 11.6642C18.9592 12.4696 18.3061 13.1225 17.5004 13.1225C16.6947 13.1225 16.0416 12.4696 16.0416 11.6642C16.0416 10.8588 16.6947 10.2058 17.5004 10.2058C18.3061 10.2058 18.9592 10.8588 18.9592 11.6642Z" fill="currentColor"/>
+            </svg>
+            О проекте
+        </a>
+    </nav>
+    <footer>
+        <div class="footer__social-icons">
+            <a href="http://www.instagram.com/kronbars/" target="_blank">
+                <img src="images/instagram.svg" alt="inst"/>
+            </a>
+            <a href="http://vk.com/kronbars" target="_blank">
+                <img src="images/vk.svg" alt="vk.com"/>
+            </a>
+            <a href="mailto:mail@kronbars.ru" target="_blank">
+                <img src="images/mail.svg"  alt="mail.ru"/>
+            </a>
+        </div>
+        <img src="images/question.svg" class="footer__question-icon" alt="❔"/>
+    </footer>
+</aside>
+
+<main>
+    <header>
+        <h1 class="header__text">СОБЫТИЯ</h1>
+        <div class="pulse">
+            <img src="images/blue-calendar.svg" alt="📅"/>
+        </div>
+    </header>
+    <div class="row row-cols-1 row-cols-md-3 g-4">
+        <div class="col">
+            <div class="card text-center h-100" style="border-radius: 10px; overflow: hidden">
+                <img src="images/volley.jpg" class="card-img-top main__card-img" alt="">
+                <div class="card-body">
+                    <h6 class="card-title main__card-title">Волейбол (кубок)</h6>
+                    <p class="card-text note">
+                        <img src="images/note-calendar.svg" alt="📅"/>
+                        03/02/2021
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card text-center h-100" style="border-radius: 10px; overflow: hidden">
+                <img src="images/poker.jpg" class="card-img-top main__card-img" alt="">
+                <div class="card-body">
+                    <h6 class="card-title main__card-title">Спортивный покер (лига)</h6>
+                    <p class="card-text note">
+                        <img src="images/note-calendar.svg" alt="📅"/>
+                        06/02/2021
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card text-center h-100" style="border-radius: 10px; overflow: hidden">
+                <img src="images/pool.jpg" class="card-img-top main__card-img" alt="">
+                <div class="card-body">
+                    <h6 class="card-title main__card-title">Бильярд (пул)</h6>
+                    <p class="card-text note">
+                        <img src="images/note-calendar.svg" alt="📅"/>
+                        12/02/2021
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card text-center h-100" style="border-radius: 10px; overflow: hidden">
+                <img src="images/cyber.jpg" class="card-img-top main__card-img" alt="">
+                <div class="card-body">
+                    <h6 class="card-title main__card-title">Киберспорт (CS:GO)</h6>
+                    <p class="card-text note">
+                        <img src="images/note-calendar.svg" alt="📅"/>
+                        18/02/2021
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card text-center h-100" style="border-radius: 10px; overflow: hidden">
+                <img src="images/ping-pong.jpg" class="card-img-top main__card-img" alt="">
+                <div class="card-body">
+                    <h6 class="card-title main__card-title">Настольный теннис (лига)</h6>
+                    <p class="card-text note">
+                        <img src="images/note-calendar.svg" alt="📅"/>
+                        02/03/2021
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card text-center h-100" style="border-radius: 10px; overflow: hidden">
+                <img src="images/darts.jpg" class="card-img-top main__card-img" alt="">
+                <div class="card-body">
+                    <h6 class="card-title main__card-title">Дартс</h6>
+                    <p class="card-text note">
+                        <img src="images/note-calendar.svg" alt="📅"/>
+                        05/03/2021
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</main>
+</body>
+</html>

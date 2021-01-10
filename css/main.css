@@ -1,0 +1,180 @@
+html, body {
+    height: 100%;
+    width: 100%;
+}
+
+@font-face {
+    font-weight: normal;
+    font-family: 'Sports World';
+    font-style: normal;
+    src: url("../fonts/SportsWorldRegular.eot");
+    src: url("../fonts/SportsWorldRegular.eot?#iefix")format("embedded-opentype"),
+    url("../fonts/SportsWorldRegular.woff") format("woff"),
+    url("../fonts/SportsWorldRegular.ttf") format("truetype");
+}
+
+@keyframes pulse {
+    0% {
+        box-shadow: 0 0 0 0 rgba(69, 131, 255, 0.6);
+    }
+    90% {
+        box-shadow: 0 0 0 15px transparent;
+    }
+    100% {
+        box-shadow: 0 0 0 0 transparent;
+    }
+}
+
+@keyframes logo {
+    0% {
+        width: 90%;
+    }
+    75% {
+        width: 100%;
+    }
+    100% {
+        width: 95%;
+    }
+}
+
+body {
+    background-image: url("../images/background.svg");
+    background-size: cover;
+    background-position: center;
+    display: flex
+}
+
+aside {
+    width: 350px;
+    display: flex;
+    flex-direction: column;
+    overflow: auto;
+}
+
+.navbar__logo {
+    width: 140px;
+    height: 156px;
+    margin: 20px;
+    align-self: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.navbar__logo-image {
+    /*width: 100%;*/
+    object-fit: cover;
+    animation: logo 0.5s linear infinite alternate;
+}
+
+nav {
+    display: flex;
+    flex-direction: column;
+    margin: auto 5%;
+}
+
+.navbar__item {
+    font-family: 'Sports World';
+    display: flex;
+    align-items: center;
+    padding: 5px 15px 5px 0;
+    color: #fff;
+    font-weight: 400;
+    font-size: 18px;
+    text-decoration: none;
+    cursor: pointer;
+    margin: 5px 0;
+}
+
+.navbar__item--active,
+.navbar__item:hover {
+    border-radius: 10px;
+    color: #3769cc;
+    background: hsla(0,0%,100%,.6);
+    box-shadow: 2px 10px 10px rgba(0,0,0,.25);
+    transition-duration: 0.5s;
+}
+
+.navbar__icon {
+    margin: 0 15px;
+}
+
+footer {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    margin-top: auto;
+    padding-bottom: 5px;
+    color: #fff;
+}
+
+.footer__social-icons {
+    display: flex;
+    align-items: flex-start;
+}
+
+.footer__question-icon {
+    position: absolute;
+    right: 15px;
+    cursor: pointer;
+}
+
+main {
+    background-color: rgba(255, 255, 255, 0.4);
+    flex: 1;
+    padding: 40px;
+    overflow: auto;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 20px;
+}
+
+.header__text {
+    font-family: 'Sports World';
+    color: #3769CC;
+    font-weight: 400;
+    font-size: 32px;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.pulse {
+    width: 27px;
+    height: 25px;
+    border-radius: 1px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: transparent;
+    cursor: pointer;
+    animation: pulse 3s infinite;
+}
+
+.pulse:hover {
+    animation: pulse 1s infinite;
+}
+
+.main__card-img {
+    height: 180px;
+    object-fit: cover;
+}
+
+.main__card-title {
+    color: #1D2C4A;
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.note {
+    color: rgba(29, 44, 74, 0.3);
+    font-size: 12px;
+    font-weight: 500;
+}
+
+main p img {
+    height: 18px;
+    margin-top: -3px;
+}
